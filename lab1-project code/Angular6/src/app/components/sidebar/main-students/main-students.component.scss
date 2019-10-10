@@ -1,0 +1,53 @@
+.mainstudents{
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    margin-left: 0%;
+    overflow-y: auto;
+        cursor: pointer;
+        position: relative;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        font-size: 150%;
+        padding-left: 15%;
+        .sidebar-menu-text{
+            color: white;
+        }
+    }
+.sidebar-list-item{
+    
+    cursor: pointer;
+    display: block;
+    position: relative;
+    font-size: 150%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 0%;
+    
+    padding-left: 15%;
+    color: white;
+    .sidebar-menu-link{
+        color: white;
+    }
+    &:hover {
+        background: #3d3c3c;
+    }
+    
+}
+.sidebar-menu-link.active{
+    color: #000000;
+    background-color: #e3e3e3;
+}
+.footer{
+    padding-top: 15%;
+    padding-left: 15%;
+    font-size: 150%;
+}
+
+.name{
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        background: #3d3c3c;
+    }
+}

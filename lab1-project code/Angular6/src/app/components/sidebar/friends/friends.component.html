@@ -1,0 +1,26 @@
+
+<div class="mainstudents">
+    <span class="sidebar-menu-text">{{friendsHeading.name}}</span>
+</div>
+<li *ngFor="let item of friendsList" class="sidebar-list-item">  
+    <a class="sidebar-menu-link"[routerLink]="[item.route]" routerLinkActive="active">
+      <div class="row">
+          <div class="col-1">
+            <img src="../../../../assets/{{item.id}}" class="rounded-circle" width="20" height="20">   
+          </div>
+          <div class="col-7">
+              <span class="sidebar-menu-text" style="color: white; font-size: 80%">{{item.name}}</span>
+          </div>
+          <div class="col-2">
+              <span class="glyphicon glyphicon-{{item.message_icon_id}}" style="padding-top: 5%;color: white; position: absolute;"></span>
+          </div>
+          <div class="col-1">
+              <span class="sidebar-menu-text" style="color: white; position: absolute;">{{item.value}}</span>
+          </div>
+      </div>
+     </a>
+</li>
+<div class="mainstudents">
+    <button type="button" class="btn btn-primary" style="margin-left: 30%; background: rgb(60, 60, 61); border-block-color: rgb(60, 60, 61);"> <span class="glyphicon glyphicon-plus-sign"></span></button>
+</div>
+

@@ -1,0 +1,27 @@
+<div class="student">
+<div class="mainstudents">
+    <span class="sidebar-menu-text">{{sideHeading.name}}</span>
+</div>
+<ul class="list-group referencematerial">
+        <li *ngFor="let item of iconInfo" class="sidebar-list-item">  
+            <a class="sidebar-menu-link"[routerLink]="[item.route]" routerLinkActive="active">
+                <span class="glyphicon glyphicon-{{item.id}}" style="padding-right: 5%;color: white"></span> <span class="sidebar-menu-text" style="color: white">{{item.name}}</span>
+             </a>
+        </li>
+    <app-friends></app-friends>
+    <div class="footer">
+            <div class="row">
+                <div class="col-1">
+                        <img src="../../../../assets/{{userData.id}}" class="rounded-circle" width="20" height="20">
+                </div>
+                <div class="col-8">
+                        <a class="name" (click)="onSelect()" style="font-size: 85% ;color: white;padding-left: 5%;padding-right: 10%;">{{userData.name}}</a> 
+                </div>
+                <div class="col-2">
+                        <span class="glyphicon glyphicon-{{userData.settingId}}"></span>
+                </div>
+            </div>
+              
+        </div>
+</ul>
+</div>

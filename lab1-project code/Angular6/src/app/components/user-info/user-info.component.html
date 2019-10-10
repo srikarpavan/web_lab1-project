@@ -1,0 +1,10 @@
+<div class="container-fuild" style="padding: 1rem;">
+  <div class="contentHeader__headline">
+    <h1>User Information</h1>
+  </div>
+    <div class ="userinfo" *ngIf="userDetails">
+      <p *ngIf="userDetails.email">User Email : <i class ="text-muted">{{userDetails.email}}</i></p>
+      <p *ngIf="userDetails.name">User name : <i class ="text-muted">{{userDetails.name}}</i></p>
+      <p *ngIf="userDetails.password">User password : <i class ="text-muted">{{userDetails.password}}</i></p>
+    </div>
+</div>

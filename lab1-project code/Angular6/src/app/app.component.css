@@ -1,0 +1,13 @@
+.app-container {
+  min-height: 100%;
+  max-width: 20%;
+  min-width: 20%;
+  background: #494747;
+  max-height: 100%;
+  position: fixed;
+  overflow-y: auto;
+}
+.main_content {
+  position: relative;
+  margin-left: 20%;
+}

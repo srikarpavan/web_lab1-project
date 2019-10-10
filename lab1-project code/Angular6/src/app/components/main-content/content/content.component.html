@@ -1,0 +1,112 @@
+<div class="card" style="padding-top: 0.99%; background: #f2f2f2" >
+    <div class="card-body">
+        <div class="row-12">
+            <div class="col-3" style="padding-left: 4.5%;">
+              <h3 class="card-title">ONLINE COURSES</h3>
+            </div >
+            <div class="list-item" style="max-height: 50%">
+            <div class="row">
+            <div class="col-3" style="padding-top: 0.85%;text-align: end; width: 0%">
+                <li *ngFor="let item of coursesDetails" class="cards-list-item">  
+                    <div class="card h-100 w-100 text-{{item.color}} bg-{{item.background}}" style="padding-left: 0%;padding-right: 0%">
+                        <div class="card-body" style="padding-left: 5%;padding-right: 5%">
+                            <h5 class="card-title text-left">{{item.header}}</h5>
+                            <h3 class="card-text text-left">{{item.content}}</h3>
+                            <div class="card-footer main_footer1 text-left">
+                                <span class="glyphicon glyphicon-{{item.likes_id}}" style="padding-right: 5%;color: black">  {{item.likes}} </span> <span class="glyphicon glyphicon-{{item.comments_id}}" style="padding-right: 5%;color: black">  {{item.comments}} </span>
+                              </div>
+                        </div>
+                    </div>
+                  </li>
+            </div>
+            <div class="col-3" style="padding-top: 0.85%;text-align: end; width: 0%">
+                <li *ngFor="let item of subjectCourses" class="cards-list-item">  
+                    <div class="card h-100 w-100 text-{{item.color}} bg-{{item.background}}" style="padding-left: 0%;padding-right: 0%">
+                        <div class="card-body" style="padding-left: 5%;padding-right: 5%">
+                            <h5 class="card-title text-left">{{item.header}}</h5>
+                            <h3 class="card-text text-left">{{item.content}}</h3>
+                            <div class="card-footer main_footer2 text-left">
+                                <span class="glyphicon glyphicon-{{item.likes_id}}" style="padding-right: 5%;color: black">  {{item.likes}} </span> <span class="glyphicon glyphicon-{{item.comments_id}}" style="padding-right: 5%;color: black">  {{item.comments}} </span>
+                              </div>
+                        </div>
+                    </div>
+                  </li>
+            </div>
+            <div class="col-3" style="padding-top: 0.85%;text-align: end; width: 0%">
+                <li *ngFor="let item of courses" class="cards-list-item">  
+                    <div class="card h-100 w-100 text-{{item.color}} bg-{{item.background}}" style="padding-left: 0%;padding-right: 0%">
+                        <div class="card-body" style="padding-left: 5%;padding-right: 5%">
+                            <h5 class="card-title text-left">{{item.header}}</h5>
+                            <h3 class="card-text text-left">{{item.content}}</h3>
+                            <div class="card-footer main_footer3 text-left">
+                                <span class="glyphicon glyphicon-{{item.likes_id}}" style="padding-right: 5%;color: black">  {{item.likes}} </span> <span class="glyphicon glyphicon-{{item.comments_id}}" style="padding-right: 5%;color: black">  {{item.comments}} </span>
+                              </div>
+                        </div>
+                    </div>
+                  </li>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-3" style="padding-left: 4.5%; padding-top: 2%">
+                <h3 class="card-title">TEACHERS</h3> 
+            </div >
+            <div class="col-9 text-right"  style="padding-left: 4.5%; padding-top: 2%">
+                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span></button><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-right"></span></button>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="col col-md-3" style="padding-bottom: 2.4%">
+                <li *ngFor="let item of teachers" class="cards-list-item">  
+                    <div class="card h-100 w-100 text-{{item.color}} bg-{{item.background}}" style="padding-left: 0%;padding-right: 0%">
+                        <div class="card-body" style="padding-left: 5%;padding-right: 5%">
+                          <div class="row">
+                          <div class="col-2">
+                            <img src="../../../../assets/{{item.image}}" class="rounded-circle" width="20" height="20">
+                          </div>
+                          <div class="col-10 text-left">
+                              <h3 class="card-title text-left">{{item.name}}</h3>
+                              <h5 class="card-text text-left">{{item.profession}}</h5>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </li>
+            </div>
+            <div class="col col-md-3">
+                <li *ngFor="let item of chemistryTeacher" class="cards-list-item">  
+                    <div class="card h-100 w-100 text-{{item.color}} bg-{{item.background}}" style="padding-left: 0%;padding-right: 0%">
+                        <div class="card-body" style="padding-left: 5%;padding-right: 5%">
+                            <div class="row">
+                                <div class="col-2">
+                                  <img src="../../../../assets/{{item.image}}" class="rounded-circle" width="20" height="20">
+                                </div>
+                                <div class="col-10 text-left">
+                                    <h3 class="card-title text-left">{{item.name}}</h3>
+                                    <h5 class="card-text text-left">{{item.profession}}</h5>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </li>
+            </div>
+            <div class="col col-md-3">
+                <li *ngFor="let item of mathmatics" class="cards-list-item">  
+                    <div class="card h-100 w-100 text-{{item.color}} bg-{{item.background}}" style="padding-left: 0%;padding-right: 0%">
+                        <div class="card-body" style="padding-left: 5%;padding-right: 5%">
+                            <div class="row">
+                                <div class="col-2">
+                                  <img src="../../../../assets/{{item.image}}" class="rounded-circle" width="20" height="20">
+                                </div>
+                                <div class="col-10 text-left">
+                                    <h3 class="card-title text-left">{{item.name}}</h3>
+                                    <h5 class="card-text text-left">{{item.profession}}</h5>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </li>
+            </div>
+          </div>
+
+  </div>
+</div>

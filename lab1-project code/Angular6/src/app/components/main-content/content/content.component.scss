@@ -1,0 +1,29 @@
+.main-view{
+    background: #f2f2f2;
+
+}
+.cards-list-item{
+    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+
+    display: flex;
+    border:1px solid #AAA;
+    border-bottom:3px solid #BBB;
+    padding:0px;
+    margin-top:5em;
+    overflow:hidden;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Roboto', sans-serif;
+}
+.main_footer1{
+    background: rgb(86, 204, 247)
+}
+
+.main_footer2{
+    background: lightgreen
+}
+.main_footer3{
+    background: lightcoral
+}
